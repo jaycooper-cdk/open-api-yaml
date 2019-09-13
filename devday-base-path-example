@@ -39,6 +39,12 @@ paths:
       - "application/xml"
       - "application/json"
       parameters:
+      - name: "Request-Id"
+        in: "header"
+        description: "Request id"
+        required: true
+        type: "string"
+        format: "uuid"
       - name: "petId"
         in: "path"
         description: "ID of pet to return"
